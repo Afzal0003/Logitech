@@ -7,37 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
     <title>Logitech</title>
 </head>
 
 <body>
-    <!-- header -->
-    <!-- <div class="main_header">
-        <div class="container">
-            <header>
-                LOGO
-                <div class="logo">
-                    <a href="/"><img src="./img/icon.png" alt="logo"></a>
-                </div>
-
-                Navigation
-                <div class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-                LOGIN
-                <div class="login">
-                    <a href="/">Login</a>
-                </div>
-            </header> -->
-
-
-
     <!-- SLIDER -->
     <div class="mobile-hero">
         <div class="slider">
@@ -45,14 +19,16 @@
 
                 <!-- MOBILE -->
                 <div class="mobile_header">
-                    <div class="log">
-                        <div class="logo">
-                            <a href="/"> <img src="./img/top-icon.png" alt="logo"></a>
+                    <div class="mobile">
+                        <div class="log">
+                            <div class="logo">
+                                <a href="/"> <img src="./img/top-icon.png" alt="logo"></a>
+                                <h1 class="loggie">Loggie</h1>
+                            </div>
+                            <div class="bars">
+                                <a href="#"><i class="fa-solid fa-bars" style="color: #ff9a29;" id="mobilebars"></i></a>
+                            </div>
                         </div>
-                        <h1 class="loggie">Loggie</h1>
-                    </div>
-                    <div class="bars">
-                        <img src="./img/menu-icon.png" alt="">
                     </div>
                     <ul class="mobilenav">
                         <li><a href="#">Home</a></li>
@@ -62,6 +38,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+
                 <h1 class="sli-h1">The Largest Premium
                     logistic Service</h1>
                 <p>From production sources to markets with the aim of optimizing the use of capital. Manufacturing and
@@ -193,19 +170,6 @@
     <!-- WORKING WITH SLIDER -->
 
     <!-- MOBILE  -->
-    <div class="w-with-mobile">
-        <div class="work-slider">
-            <div class="container">
-                <h1>Working With</h1>
-                <p class="border-bottom"></p>
-                <p class="work-p">Here Are Some Of The Great Companies In The Field That We Work With From Various
-                    Fields
-                    And Business
-                    Scales</p>
-            </div>
-        </div>
-    </div>
-
 
 
     <!-- DESKTOP  -->
@@ -381,9 +345,9 @@
 
                             <h2>Loggie</h2>
                             <!-- Back to Top  -->
-                            <div class="back-to-top">
-                                <img src="./img/Back-To-Top-Button.jpg" alt="Back-To-Top-Button" class="back-to-top">
-                            </div>
+                            <!-- <div class="back-to-top">
+                                <a href="/"><i class="fa-solid fa-angle-up" style="color: #ffffff;"></i></a>
+                            </div> -->
                         </div>
                         <p class="border-grey"></p>
                         <ul class="bottom-nav">
@@ -456,16 +420,22 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
-        // $(document).ready(function () {
-        //     $("#mobilebars").click(function () {
-        //         $("#mobilenav").slideToggle("slow");
-        //     });
-        // });
+        $(document).ready(function () {
+            $("#mobilebars").click(function () {
+                $(".mobilenav").slideToggle("slow");
+            });
+        });
 
         $(document).ready(function () {
             $('.w-with-desktop').slick({
             });
         });
+
+        $(document).ready(function () {
+            $('.w-with-mobile').slick({
+            });
+        });
+
     </script>
 </body>
 
